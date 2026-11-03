@@ -1,0 +1,30 @@
+# Environment Variables
+.env
+.env.*
+
+# AWS
+.aws/
+
+# SSH Keys
+*.pem
+*.ppk
+*.key
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+.terraform.lock.hcl
+
+# Logs
+*.log
+
+# Node Modules
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+secrets/
