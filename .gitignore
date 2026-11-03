@@ -2,13 +2,8 @@
 .env
 .env.*
 
-# AWS
-.aws/
-
-# SSH Keys
-*.pem
-*.ppk
-*.key
+# Node Modules
+node_modules/
 
 # Terraform
 .terraform/
@@ -16,14 +11,21 @@ terraform.tfstate
 terraform.tfstate.*
 .terraform.lock.hcl
 
+# AWS
+.aws/
+
+# Keys
+*.pem
+*.ppk
+*.key
+
 # Logs
 *.log
 
-# Node Modules
-node_modules/
-
-# IDE
+# VS Code
 .vscode/
+
+# IntelliJ
 .idea/
 
 # Secrets
