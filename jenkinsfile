@@ -1,19 +1,25 @@
 pipeline {
-
     agent any
 
     stages {
 
-        stage('Start') {
-
+        stage('Checkout') {
             steps {
-
-                echo 'Microservices DevOps Project'
-
+                git 'https://github.com/dinesh-1898/microservices-devops-project.git'
             }
+        }
 
+        stage('Build Docker Images') {
+            steps {
+                sh 'docker compose build'
+            }
+        }
+
+        stage('Show Images') {
+            steps {
+                sh 'docker images'
+            }
         }
 
     }
-
 }
