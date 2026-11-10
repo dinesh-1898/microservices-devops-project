@@ -40,3 +40,5 @@ AWS Account ID: 844632828058
 ## Project Status
 
 Day 1 Completed
+
+Deployment documented via CI/CD pipeline.
